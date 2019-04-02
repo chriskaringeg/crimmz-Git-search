@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "Crimmz-Git-search",
+            "outputPath": "dist/Github-API-Search",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -54,18 +54,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Crimmz-Git-search:build"
+            "browserTarget": "Github-API-Search:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Crimmz-Git-search:build:production"
+              "browserTarget": "Github-API-Search:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Crimmz-Git-search:build"
+            "browserTarget": "Github-API-Search:build"
           }
         },
         "test": {
@@ -107,11 +107,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Crimmz-Git-search:serve"
+            "devServerTarget": "Github-API-Search:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Crimmz-Git-search:serve:production"
+              "devServerTarget": "Github-API-Search:serve:production"
             }
           }
         },
@@ -127,5 +127,5 @@
       }
     }
   },
-  "defaultProject": "Crimmz-Git-search"
+  "defaultProject": "Github-API-Search"
 }
